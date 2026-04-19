@@ -26,13 +26,9 @@ const images = [
 ];
 
 const gallery = document.querySelector(".gallery"); // створює змінну gallery та шукає ul список з назвою за класом gallery
-// const li = document.createElement("li");     <----створює змінну та li
-//const img = document.createElement("img");    <-----створює змінну та img
-//img.src = images[0].url;        <------ як створити атрибут src
-//img.alt = images[0].alt;        <------ як створити атрибут alt
-//li.append(img);                 <---- як додати img в середину li
+
 const items = [];
-for (image of images) {
+for (const image of images) {
   const li = document.createElement("li");
   const img = document.createElement("img");
   img.src = image.url;
@@ -41,3 +37,8 @@ for (image of images) {
   items.push(li);
 }
 gallery.append(...items);
+// const li = document.createElement("li");     <----створює змінну та li
+//const img = document.createElement("img");    <-----створює змінну та img
+//img.src = images[0].url;        <------ як створити атрибут src
+//img.alt = images[0].alt;        <------ як створити атрибут alt
+//li.append(img);                 <---- як додати img в середину li
