@@ -33,8 +33,8 @@ for (const image of images) {
   const img = document.createElement("img");
   img.src = image.url;
   img.alt = image.alt;
-  li.append(img);
-  items.push(li);
+  li.append(img); // додає img всередину li
+  items.push(li); // додає li в створений масив items
 }
 gallery.append(...items);
 // const li = document.createElement("li");     <----створює змінну та li
